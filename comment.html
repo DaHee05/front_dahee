@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/comments.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script defer src="js/comment.js"></script>
+</head>
+<body>
+    <div class="memo">
+        <input type="text" name="nickname" class="input nickname-input" placeholder="NICKNAME...">
+        <input type="text" name="content" class="input content-input" placeholder="코멘트를 남겨주세요...">
+        <button type="submit" class="combtn" id="submit-btn">방명록 남기기</button>
+        <button class="combtn homeBtn" onclick="goBack()">돌아가기</button>
+    </div>
+    <div class="container">
+        <div class="cards">
+            <div class="card card-one">
+                <h2 class="card-title">Card One</h2>
+                <p class="date">May 25, 2021</p>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores alias ut veniam? <button class="delete-btn">x</button></p>
+            </div>
+        </div>
+    </div>    
+</body>
+</html>

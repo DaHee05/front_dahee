@@ -1,0 +1,189 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500;600;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    scroll-snap-align: start;
+}
+
+/* 첫 번째 홈 화면 css */
+.home {
+    background: url('/img/20240519_175541.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 네비게이션 이동 css */
+nav {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 7px;  
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li:last-child {
+    margin-right: 10px;  /* 마지막 항목은 오른쪽 여백 추가 */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 10px;  
+    display: block; 
+}
+nav ul li a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+/* 가운데 텍스트 스타일 */
+.title  {
+    color: white; 
+    font-size: 20px;
+    /*position: relative; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: rotate(-2deg); /* 모든 카드를 -5도 회전 */
+}
+
+.title span {
+    display: block;
+    background-color: rgb(29, 128, 35);
+    padding: 3px 10px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+    font-weight: bold;
+    width: fit-content;
+}
+
+/* 학번 이름 정렬 */
+.name {
+    position: absolute;
+    bottom: 50px; 
+    left: 40px; 
+    width: 95%;
+    color: rgba(255, 255, 255, 0.871); 
+    padding: 10px 0px;
+    font-size: 1.2em;
+    font-style: italic;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.871);
+}
+
+/* footer css*/
+footer {
+  background-color: #545454; 
+  text-align: center; 
+  padding: 20px 10px; 
+  position: relative;
+  width: 100%;
+  margin-top: auto; 
+}
+
+footer p {
+  margin: 0;
+  color: #f8f9fa; /* 중간 회색 텍스트 색상 */
+  font-size: 14px;
+}
+  
+
+/*마지막 섹션 #3d5b10; #ececed;*/
+.video {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+
+.iframe-container {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.ultimate_path {
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    z-index: 0;
+    position: relative;
+}
+
+
+.ultimate_path h2 {
+    font-size: 130px;
+    font-weight: bold;
+    /*color: rgba(255, 255, 255, 0.949); */
+    color: transparent; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+#up-iu {
+    align-self: flex-start;
+    top: 4.5%;
+    animation: marqueeX 5s linear forwards;
+    background-image: url('/img/20240607_211732209.jpg'); 
+    background-clip: text;
+    background-size: 100%; 
+    -webkit-background-clip: text;
+}
+
+#down-iu {
+    align-self: flex-end;
+    bottom: 9.5%;
+    animation: marquee 5s linear forwards;
+    background-image: url('/img/20240607_212448.jpg'); 
+    background-clip: text;
+    background-size: 100%; 
+    -webkit-background-clip: text;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes marqueeX {
+    0% {
+        transform: translateX(000%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}

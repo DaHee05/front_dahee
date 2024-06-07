@@ -1,0 +1,154 @@
+@charset "utf-8";
+/* 프로필 부분 css */
+.profile_me {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    overflow: hidden;
+    height: 80%;
+}
+
+.left-panel {
+    background-size: cover;
+    background-position: center;
+    padding: 0px;
+    border-radius: 10px;
+    color: white;
+    width: 600px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    position: relative; /* 추가 */
+    overflow: hidden; /* 추가 */
+}
+
+/* 섹션 스타일 */
+.left-panel section {
+    width: 100%;
+    height: 100%;
+}
+
+.left-panel section article {
+    width: 100%;
+    height: 100%;
+    display: none;
+    transition: opacity 2s; /* 부드러운 전환 효과 추가 */
+}
+
+.left-panel section article.on {
+    display: block;
+    opacity: 1;
+}
+
+.left-panel section article .inner {
+    width: 100%;
+    height: 100%;
+}
+
+.left-panel section article .inner .pic {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+/* 텍스트 스타일 */
+.left-panel .txt {
+    position: absolute;
+    bottom: 50px;
+    left: 10px;
+    text-align: left;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+    padding-bottom: 10px; 
+    padding-left: 10px; 
+    z-index: 10; /* 텍스트가 버튼 위로 오도록 설정 */
+}
+
+.left-panel .txt h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.left-panel .txt p {
+    font-size: 16px;
+}
+
+/* 버튼 스타일 */
+.left-panel .btnNext {
+    width: calc(100% - 40px); /* 좌우 간격 10px씩 */
+    padding: 10px 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: rgba(29, 29, 29, 0.493);
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    bottom: 20px;
+    left: 20px; 
+    z-index: 10; /* 버튼이 이미지 위에 오도록 설정 */
+}
+
+.left-panel .btnNext span {
+    font: 16px/1 "arial";
+    color: white;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.right-panel {
+    margin-left: 5%;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.top-panel, .bottom-panel {
+    flex: 1;
+    display: flex;
+    padding: 20px;
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-color: white;
+}
+
+.top-panel {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* 글씨 상하 */
+    padding-bottom: 0px;
+}
+
+.stock-info {
+    font-size: 15px;
+    margin-bottom: 20px;
+   justify-content: end;
+}
+
+.news {
+    flex-grow: 1;
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 0px;
+}
+
+.news h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}

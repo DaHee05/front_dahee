@@ -1,0 +1,129 @@
+/* 스킬 버튼에 마우스 올리면 아이콘 등장 css*/
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    align-items: center; /* 가운데 정렬 */
+  }
+  
+  .up {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+  }
+  
+  .down {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+  }
+  
+  .card1 {
+    width: 90px;
+    height: 90px;
+    outline: none;
+    border: none;
+    background: white;
+    border-radius: 90px 5px 5px 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .2s ease-in-out;
+  }
+  
+  .htmls {
+    margin-top: 1.5em;
+    margin-left: 1.2em;
+    fill: rgb(29, 128, 35);
+  }
+  
+  .card2 {
+    width: 90px;
+    height: 90px;
+    outline: none;
+    border: none;
+    background: white;
+    border-radius: 5px 90px 5px 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .2s ease-in-out;
+  }
+  
+  .python {
+    margin-top: 1.5em;
+    margin-left: -.9em;
+    fill: #03A9F4;
+  }
+  
+  .card3 {
+    width: 90px;
+    height: 90px;
+    outline: none;
+    border: none;
+    background: white;
+    border-radius: 5px 5px 5px 90px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .2s ease-in-out;
+  }
+  
+  .figma {
+    margin-top: -.6em;
+    margin-left: 1.2em;
+    fill: rgba(160, 111, 205, 0.767);
+  }
+  
+  .card4 {
+    width: 90px;
+    height: 90px;
+    outline: none;
+    border: none;
+    background: white;
+    border-radius: 5px 5px 90px 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .2s ease-in-out;
+  }
+  
+  .jss {
+    margin-top: -.9em;
+    margin-left: -1.2em;
+    fill: #FFD43B;
+  }
+  
+  .card1:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background-color:rgb(29, 128, 35);
+  }
+  
+  .card1:hover .htmls {
+    fill: white;
+  }
+  
+  .card2:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: #03A9F4;
+  }
+  
+  .card2:hover .python {
+    fill: white;
+  }
+  
+  .card3:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: rgba(160, 111, 205, 0.767);
+  }
+  
+  .card3:hover .figma {
+    fill: white;
+  }
+  
+  .card4:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: #FFD43B;
+  }
+  
+  .card4:hover .jss {
+    fill: white;
+  }
+  
+  
