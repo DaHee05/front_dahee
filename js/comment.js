@@ -1,4 +1,4 @@
-const host = "http://34.201.238.254:8085";
+const host = "http://34.201.238.254:8080";
 const commentContainer = document.querySelector('.container .cards');
 
 function getComments() {
